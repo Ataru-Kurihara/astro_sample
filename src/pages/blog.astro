@@ -1,9 +1,29 @@
-<body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+---
+    import '../styles/global.css';
+    const pageTitle = "Blog";
+---
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Astro</title>
+        <title>{pageTitle}</title>
+    </head>
+    <body>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
 
-    <h1>My Astro Site</h1>
-    <h1>My Blog</h1>
-    <p>test blog</p>
-</body>
+        <h1>{pageTitle}</h1>
+        <h1>My Blog</h1>
+        <p>test blog</p>
+        <ul>
+            <li><a href="/posts/post-1/">Post 1</a></li>
+            <li><a href="/posts/post-2">Post 2</a></li>
+            <li><a href="/posts/post-3">Post 3</a></li>
+        </ul>
+    </body>
+</html>
+
+
+
